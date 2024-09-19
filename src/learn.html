@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | Coding | stuffzez.github.io</title>
+    <script>
+        function login() {
+            var accesscode = document.getElementById("accesscodeinput").value; // Use .value instead of .innerHTML
+            console.log(accesscode);
+            var url = 'https://stuffzez.github.io/src/learn/l';
+            var combinedurl = url + accesscode;
+            window.location.replace(combinedurl);
+        }
+    </script>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Please Enter Your Access Code To Continue!</h1>
+    <input type="text" id="accesscodeinput">
+    <input type="button" onclick="login()" value="Login!">
+</body>
+</html>
