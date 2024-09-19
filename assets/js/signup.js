@@ -5,7 +5,7 @@ const start = urlParams.get('start')
 
 function paramerterTest(parameter) {
     if (parameter !== undefined){
-        location.replace("https://stuffzez.github.io/learn/signup")
+        location.replace("https://stuffzez.github.io/Coding/signup")
     }
 }
 
