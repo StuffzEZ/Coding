@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stuffzez.github.io/Coding/assets/css/main.css">
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const prev = urlParams.get('prev')
+
+        function prevpage() {
+            if (prev !== undefined){
+                location.replace("https://stuffzez.github.io/Coding/src/learn")
+            } else {
+                location.replace(prev)
+            }
+        }
+    </script>
+    <style>
+    </style>
+    <title>Why Is It Important To Put index.html As My Home Page's Name? | Coding Article | stuffzez.github.io</title>
+</head>
+<body>
+    <h1>Why Do I Need To Put index.html As My Home Page's Name?</h1>
+    <br>
+    <p>Lots Of People May Be Wondering, Especially After Lesson 1002, Why Do You Have To Put index.html As Your Home Page's Name! Here's Why!</p>
+    <p>The Main Reason For This Is That Most Hosting Platforms Look For The Name "index" For The Home Page. Not Only This But It Is Easy For People To Remember As 'index = first' Since Your Index Finger Is Your First Finger.</p>
+    <button onclick="prevpage()">Take Me To My Lesson!</button>
+</body>
+</html>
