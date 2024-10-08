@@ -8,7 +8,7 @@
         function login() {
             var accesscode = document.getElementById("accesscodeinput").value; // Use .value instead of .innerHTML
             console.log(accesscode);
-            var url = 'https://stuffzez.github.io/learn/src/Coding/l';
+            var url = 'https://stuffzez.github.io/Coding/src/learn/l';
             var combinedurl = url + accesscode;
             window.location.replace(combinedurl);
         }
@@ -24,5 +24,6 @@
     <h1>Please Enter Your Access Code To Continue!</h1>
     <input type="text" id="accesscodeinput">
     <input type="button" onclick="login()" value="Login!">
+    <a href="https://stuffzez.github.io/Coding/signup">Sign Up</a>
 </body>
 </html>
