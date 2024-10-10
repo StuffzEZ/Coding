@@ -3,11 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>No More Pages</title>
+    <script src="https://stuffzez.github.io/Coding/assets/js/code.js"></script>
+    <link rel="stylesheet" href="https://stuffzez.github.io/Coding/assets/css/main.css">
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const code = urlParams.get('code')
+
+
+        if (code !== undefined){
+            location.replace("https://stuffzez.github.io/Coding/403")
+        }
+
+        if (code == getcode()) {
+            console.log('Code Correct')
+        }
+    </script>
+    <title>HTML Lesson 3 - Quiz! | Coding | stuffzez.github.io</title>
 </head>
 <body>
-    <h1>You're All Caught Up!</h1>
+    <h1>HTML Lessons 3 - Quiz | Coding | stuffzez.github.io</h1>
     <br>
-    <p>Lesson 1002 Is The Newest Lesson!</p>
+    <h2>Let's Test Your Knowledge On HTML!</h2>
+    <br>
+    <form action="https://stuffzez.github.io/src/learn/l1003_quiz_results">
+        <label for="q1">What Does HTML Stand For?</label>
+        <select name="q1" id="q1">
+            <option value="void" disabled>Choose An Option...</option>
+            <option value="a1">Hyper Text Markup Language</option>
+            <option value="a2">Hyphon Tea Markup Langauge</option>
+            <option value="a3">High Text Marches Left</option>
+        </select>
+        <br>
+        <br>
+        <label for="q2">Match The Description To The Item: &lt;br&gt;</label>
+        <select name="q2" id="q2">
+            <option value="void" disabled>Choose An Option...</option>
+            <option value="a1">Add Brackets In</option>
+            <option value="a2">Add A Line Break In</option>
+            <option value="a3">Go To A New Line</option>
+        </select>
+        <label for="q3">Match The Description To The Item: &lt;p&gt;&lt;/p&gt;</label>
+        <select name="q3" id="q3">
+            <option value="void" disabled>Choose An Option...</option>
+            <option value="a1">Add Text</option>
+            <option value="a2">New Page</option>
+            <option value="a3">Add Title</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="Sign Up!">
+    </form>
 </body>
 </html>
