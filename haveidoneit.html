@@ -1,0 +1,29 @@
+<!-- TODO: Better Version -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Match Check</title>
+    <script>
+        function checkString() {
+            const inputString = document.getElementById("inputString").value;
+            const expectedString = "?q1=a1&q2=a2&q3=a1&q3=a3&q3=a1";
+            const result = document.getElementById("result");
+
+            if (inputString === expectedString) {
+                result.textContent = "You Have!";
+            } else {
+                result.textContent = "You Haven't :(";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Check if the Input String Matches</h2>
+    <input type="text" id="inputString" placeholder="Enter your string">
+    <button onclick="checkString()">Check</button>
+    <p id="result"></p>
+</body>
+</html>
