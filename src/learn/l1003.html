@@ -10,13 +10,10 @@
         const urlParams = new URLSearchParams(queryString);
         const code = urlParams.get('code')
 
-
-        if (code !== undefined){
-            location.replace("https://stuffzez.github.io/Coding/403")
-        }
-
         if (code == getcode()) {
             console.log('Code Correct')
+        } else {
+            location.replace("https://stuffzez.github.io/Coding/403")
         }
     </script>
     <title>HTML Lesson 3 - Quiz! | Coding | stuffzez.github.io</title>
