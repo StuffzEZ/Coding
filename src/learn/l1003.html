@@ -24,10 +24,10 @@
             const dayOfYear = Math.ceil((date - new Date(year, 0, 1)) / 86400000); // Day number in the year (1-365/366)
         
             // Format: DAYOFWEEKHOURYEARNUMBERDAYNUMBERMONTHT_OR_F_AFTERNOON?MONTHNUMBERDAYOFYEAR
-            const ans_code =  `${dayOfWeek}${hour}${year}${dayNumber}${month}${isAfternoon}${monthNumber}${dayOfYear}`;
+            return `${dayOfWeek}${hour}${year}${dayNumber}${month}${isAfternoon}${monthNumber}${dayOfYear}`;
         }
 
-        if (code == ans_code) {
+        if (code == getcode()) {
             console.log('Code Correct')
         } else {
             location.replace("https://stuffzez.github.io/Coding/403")
